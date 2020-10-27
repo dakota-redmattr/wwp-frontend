@@ -1,0 +1,9 @@
+.ab-card__card-grid-wrapper {
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
+}
+
+.ui.compact.segment.ab-card__image-left-wrapper {
+  padding: 0;
+}

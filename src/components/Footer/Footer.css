@@ -1,0 +1,79 @@
+.footer__main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  padding-bottom: 40px;
+  background-color: #0c0f18;
+}
+
+.footer__page-link-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 750px;
+  margin-bottom: 45px;
+}
+
+.footer__page-link {
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer__page-link:hover {
+  color: white;
+  transition: all 0.1s ease;
+  scale: 1.05;
+}
+
+.footer__logo-image {
+  width: 145px;
+  margin: 10px;
+}
+
+.footer__copyright-text-wrapper {
+  margin-bottom: 15px;
+}
+
+.footer__copyright-text {
+  font-size: 11px;
+  color: gray;
+}
+
+.footer__social-icon-divider {
+  width: 100px;
+  background-color: gray;
+  opacity: 0.45;
+}
+
+.footer__social-icon-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.footer__social-link {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.footer__social-link:hover {
+  color: white;
+  transition: all 0.1s ease;
+  scale: 1.05;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__page-link-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 350px;
+  }
+
+  .footer__page-link {
+    margin-top: 10px;
+  }
+}

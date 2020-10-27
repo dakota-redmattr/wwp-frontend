@@ -1,0 +1,115 @@
+.about__main-page-wrapper {
+  padding-top: 90px;
+  background-color: #f7f8fa;
+  min-height: 900px;
+  justify-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://wickedwingpub.s3.amazonaws.com/brickBack.jpg);
+  background-size: cover;
+}
+
+.about__main-page-content-wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-items: center;
+}
+
+.about__left-sidebar-wrapper {
+  width: 85%;
+  margin-top: 1em;
+}
+
+.ui.header.about__left-sidebar-header {
+  font-size: 1.5vw;
+}
+
+.ui.header.about__left-sidebar-desc {
+  font-size: 1.1vw;
+}
+
+.ui.raised.segment.about__card-wrapper-seg {
+  width: 97%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.about__title-header-seg {
+  display: flex;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 10px;
+  background-color: rgb(225, 225, 225);
+  border-bottom: 2px solid rgb(174, 174, 174);
+}
+
+.about__title-header-text {
+  color: #8dc633;
+  text-shadow: -2px 1px black;
+  padding-left: 35px;
+  font-size: 2rem;
+}
+
+.about__content-grid-wrapper {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 65% 35%;
+}
+
+.about__location-left-column {
+  background-color: coral;
+  margin: 1.5vw;
+  height: 600px;
+}
+
+.about__location-right-column {
+  background-color: coral;
+  margin: 1.5vw;
+  height: 400px;
+}
+
+/* @media screen and (max-width: 1200px) {
+
+} */
+
+@media screen and (max-width: 1200px) {
+  .about__main-page-wrapper {
+    padding-top: 0;
+  }
+
+  .about__main-page-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__left-sidebar-wrapper {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .ui.raised.segment.about__left-sidebar-seg {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+  }
+
+  .ui.header.about__left-sidebar-header {
+    font-size: 3rem;
+  }
+
+  .ui.header.about__left-sidebar-desc {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .ui.header.about__left-sidebar-desc {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ui.header.about__left-sidebar-desc {
+    font-size: 20px;
+  }
+}

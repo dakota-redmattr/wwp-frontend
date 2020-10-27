@@ -1,0 +1,36 @@
+.hour-a__container {
+  display: none;
+}
+
+.hour-a__container {
+  margin: 1rem 0 0.75rem;
+  position: relative;
+  width: 100%;
+}
+
+.ui.styled.accordion.hour-a__accordian {
+  width: 100% !important;
+  max-width: unset;
+}
+
+.ui.styled.accordion > .title.hour-a__dropdown-title {
+  font-size: 4.25vw;
+}
+
+.ui.grid.hour-a__hours-grid {
+  padding: 4px 0;
+}
+
+.ui.grid > .two.column.row {
+  padding: 3px 0;
+}
+
+.ui.active.transition.visible.inverted.dimmer.hour-a__loading-dimmer {
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .hour-a__container {
+    display: block;
+  }
+}

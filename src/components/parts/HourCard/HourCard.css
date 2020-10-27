@@ -1,0 +1,75 @@
+.ui.placeholder.segment.hr-card__main-segment-desktop {
+  justify-content: start;
+  min-height: unset;
+  width: 95%;
+  height: 95%;
+  padding: 0.75vw 1vw;
+}
+
+.ui.header.hr-card__header {
+  font-size: 1.15vw;
+  margin-bottom: 0;
+}
+
+.hr-card__hour-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding-top: 0.7vw;
+}
+
+.hr-card__day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hr-card__time-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hr-card__day-column > .ui.header {
+  font-size: 0.8vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.hr-card__time-column > .ui.header {
+  font-size: 0.8vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.ui.header.hr-card__day-header {
+  margin: 0;
+}
+
+.ui.header.hr-card__day-header::before {
+  padding: 0.2vw;
+  height: unset !important;
+}
+
+.ui.header.hr-card__time-range {
+  margin: 0;
+}
+
+.ui.header.hr-card__time-range::before {
+  padding: 0.2vw;
+  height: unset !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .ui.header.hr-card__header {
+    font-size: 1.4vw;
+  }
+
+  .hr-card__day-column > .ui.header,
+  .hr-card__time-column > .ui.header {
+    font-size: 1.18vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ui.placeholder.segment.hr-card__main-segment-desktop {
+    display: none;
+  }
+}

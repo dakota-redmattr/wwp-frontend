@@ -1,0 +1,105 @@
+.mcc__wrapper {
+  width: 19vw;
+  height: 19vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  position: static;
+  transition: all 0.25s ease-in-out;
+}
+
+.mcc__wrapper:hover .mcc__dimmer {
+  opacity: 0.45;
+  visibility: visible;
+}
+
+.mcc__wrapper:hover .mcc__cat-title {
+  text-decoration: underline;
+  text-decoration-thickness: 0.2vw;
+}
+
+.mcc__dimmer {
+  display: flex;
+  height: 19vw;
+  width: 19vw;
+  min-width: 19vw;
+  background-color: black;
+  border-radius: 0.25vw;
+  opacity: 0.45;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.mcc__wrapper > .mcc__cat-title {
+  width: 17vw;
+  height: 17vw;
+  min-width: 17vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.6vw;
+  font-family: "norwesterregular";
+  color: #8dc633;
+  text-shadow: 2px 2px black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  transition: all 0.25s ease-in-out;
+}
+
+.mcc__wrapper > .mcc__cat-arrow-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  height: 19vw;
+  z-index: 7;
+  margin-left: auto;
+  right: 0;
+  font-size: 1.6vw;
+  color: #8dc633;
+  transition: all 0.1s ease-in-out;
+}
+
+.mcc__wrapper:hover > .mcc__cat-arrow-icon {
+  visibility: visible;
+}
+
+@media screen and (max-width: 960px) {
+  .mcc__dimmer {
+    width: 28.33vw;
+    height: 28.33vw;
+  }
+
+  .mcc__wrapper > .mcc__cat-title {
+    width: 28.33vw;
+    height: 28.33vw;
+    min-width: 28.33vw;
+    font-size: 2.5vw;
+  }
+
+  .mcc__wrapper:hover > .mcc__cat-title {
+    transform: scale(1.03);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mcc__wrapper {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .mcc__dimmer {
+    width: 40vw;
+    height: 40vw;
+    min-width: 40vw;
+  }
+
+  .mcc__wrapper > .mcc__cat-title {
+    font-size: 4vw;
+  }
+}

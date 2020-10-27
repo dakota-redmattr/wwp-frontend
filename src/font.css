@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Wicked";
+  src: url("https://d1v2exdleuhyqq.cloudfront.net/font/wicked.woff2")
+      format("woff2"),
+    url("https://d1v2exdleuhyqq.cloudfront.net/font/wicked.woff") format("woff");
+  /* url("http://localhost:8000/media/font/wicked.woff2") format("woff2"),
+    url("http://localhost:8000/media/font/wicked.woff") format("woff"); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "norwesterregular";
+  src: url("https://d1v2exdleuhyqq.cloudfront.net/font/wickedscript.woff2")
+      format("woff2"),
+    url("https://d1v2exdleuhyqq.cloudfront.net/font/wickedscript.woff")
+      format("woff"),
+    url("http://localhost:8000/media/font/wickedscript.woff2") format("woff2"),
+    url("http://localhost:8000/media/font/wickedscript.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

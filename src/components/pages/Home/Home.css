@@ -1,0 +1,397 @@
+.home__main-content-wrapper {
+  background-color: #f7f8fa;
+}
+
+.home__jumbo-seg {
+  padding-top: 80px;
+  height: 800px;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7) 30%,
+      rgba(0, 0, 0, 0.3) 45% 100%
+    ),
+    url(https://wickedwingpub.s3.amazonaws.com/BackgroundA.jpg);
+  background-size: cover;
+  box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.75);
+}
+
+.home__jumbo-content-wrapper {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 720px;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  align-items: center;
+}
+
+.home__jumbo-header-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+}
+
+.home__jumbo-header-text {
+  font-family: "Wicked";
+  word-spacing: 30vw;
+  line-height: 5vw;
+}
+
+.home__jumbo-header-text-1,
+.home__jumbo-header-text-2 {
+  margin: 0;
+  font-size: 5vw;
+  font-weight: 400;
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: #fff;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.home__jumbo-header-text-3 {
+  line-height: 15vw;
+  font-size: 8.5vw;
+  -webkit-text-stroke: 3px #000;
+  -webkit-text-fill-color: #8dc633;
+  text-shadow: 4px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.home__jumbo-right-column-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__jumbo-right-column-text {
+  text-align: center;
+  width: 45vw;
+  font-family: "Wicked";
+  font-weight: 300;
+  font-size: 1.5vw;
+  color: #fff;
+  text-shadow: 4px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-bottom: 2.5vw;
+}
+
+.home__jumbo-right-column-wrapper > a > .home__jumbo-right-column-btn {
+  margin-top: 2.5vw;
+  width: 15rem;
+  background-color: #8dc633;
+  color: black;
+}
+
+.home__jumbo-right-column-btn > .home__jumbo-right-column-btn-icon {
+  color: black;
+  padding: 0;
+}
+
+.home__secondary-content-container {
+  margin-top: 40px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home__secondary-wrapper {
+  padding: 2vw;
+}
+
+.home__secondary-wrapper > div {
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  width: 46vw;
+  height: 36vw;
+}
+
+.home__secondary-content-wrapper {
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.75);
+}
+
+.home__secondary-content-one {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.75) 50%,
+      rgba(0, 0, 0, 0.45) 65% 100%
+    ),
+    url(https://wickedwingpub.s3.amazonaws.com/wingsSeg.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.home__secondary-one-header-wrapper > .home__secondary-one-header,
+.home__secondary-content-one > .home__secondary-one-desc {
+  font-family: "Wicked";
+}
+
+.home__secondary-one-header-wrapper {
+  align-self: start;
+  padding-left: 2vw;
+  padding-top: 2vw;
+}
+
+.home__secondary-one-header-wrapper > .home__secondary-one-header {
+  font-size: 2.5vw;
+  -webkit-text-stroke: 1px #000;
+  margin-bottom: -0.25vw;
+}
+
+.home__secondary-one-header-wrapper > .home__secondary-one-header-underline {
+  height: 0.2vw;
+  width: 33.5vw;
+  background-color: white;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.home__secondary-content-one > .home__secondary-one-desc {
+  margin-top: 3.5vw;
+  width: 38vw;
+  font-size: 1.8vw;
+  font-weight: 100;
+  -webkit-text-stroke: 1px #000;
+}
+
+.home__secondary-wrapper-one
+  > .home__secondary-content-one
+  > a
+  > .home__secondary-one-btn {
+  margin-top: 3.5vw;
+  padding: 1.5vw 2vw;
+  border-radius: 0.6vw;
+  font-size: 2.1vw;
+  background-color: #8dc633;
+  color: black;
+}
+
+.home__secondary-content-two {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.75) 50%,
+      rgba(0, 0, 0, 0.45) 65% 100%
+    ),
+    url(https://wickedwingpub.s3.amazonaws.com/front.jpg);
+  background-size: cover;
+  background-position-x: 80%;
+}
+
+.home__secondary-wrapper-two > .home__secondary-content-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.home__secondary-two-header-wrapper {
+  padding-left: 3vw;
+}
+
+.home__secondary-content-two
+  > .home__secondary-two-header-wrapper
+  > .home__secondary-two-header {
+  word-spacing: 20vw;
+  line-height: 10vw;
+  font-family: "Wicked";
+  font-size: 6vw;
+  font-weight: 400;
+  color: white;
+  -webkit-text-stroke: 1px #000;
+}
+
+.home__secondary-two-right-wrapper {
+  height: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home__secondary-two-right-wrapper > .home__secondary-two-desc {
+  text-align: center;
+  font-size: 1.8vw;
+  font-family: "Wicked";
+  font-weight: 300;
+  -webkit-text-stroke: 1px black;
+  color: white;
+}
+
+.home__secondary-content-two
+  > .home__secondary-two-right-wrapper
+  > a
+  > .home__secondary-two-btn {
+  padding: 1vw 1.85vw;
+  border-radius: 0.6vw;
+  font-size: 1.75vw;
+  background-color: #8dc633;
+  color: black;
+}
+
+@media screen and (max-width: 960px) {
+  .home__jumbo-seg {
+    height: 650px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7) 55%,
+        rgba(0, 0, 0, 0.3) 70% 100%
+      ),
+      url(https://wickedwingpub.s3.amazonaws.com/BackgroundA.jpg);
+    background-size: cover;
+  }
+
+  .home__jumbo-content-wrapper {
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .home__jumbo-header-text-wrapper {
+    height: auto;
+    align-self: start;
+  }
+
+  .home__jumbo-header-text {
+    word-spacing: unset;
+  }
+
+  .home__jumbo-header-text-1,
+  .home__jumbo-header-text-2 {
+    line-height: 6vw;
+    font-size: 5vw;
+  }
+
+  .home__jumbo-header-text-3 {
+    line-height: 15vw;
+    font-size: 14vw;
+    -webkit-text-stroke: 0px #000;
+    -webkit-text-fill-color: #8dc633;
+    text-shadow: 4px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+      -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .home__jumbo-right-column-text {
+    width: 90vw;
+    font-size: 2.5vw;
+  }
+
+  .home__secondary-content-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home__secondary-wrapper {
+    padding: 3.5vw;
+  }
+
+  .home__secondary-wrapper > div {
+    min-height: 300px;
+    width: 93vw;
+    height: 75vw;
+    border-radius: 1vw;
+  }
+
+  .home__secondary-one-header-wrapper > .home__secondary-one-header {
+    font-size: 5.5vw;
+    -webkit-text-stroke: 1px #000;
+    margin-bottom: -1vw;
+  }
+
+  .home__secondary-one-header-wrapper > .home__secondary-one-header-underline {
+    width: 74vw;
+    height: 0.4vw;
+  }
+
+  .home__secondary-content-one > .home__secondary-one-desc {
+    margin-top: 8vw;
+    width: 80vw;
+    font-size: 4.5vw;
+    font-weight: 100;
+    -webkit-text-stroke: 1px #000;
+  }
+
+  .home__secondary-wrapper-one
+    > .home__secondary-content-one
+    > a
+    > .home__secondary-one-btn {
+    margin-top: 3.5vw;
+    padding: 2.5vw 4vw;
+    border-radius: 1.25vw;
+    font-size: 6vw;
+    background-color: #8dc633;
+    color: black;
+  }
+
+  .home__secondary-two-header-wrapper {
+    padding-left: 6vw;
+  }
+
+  .home__secondary-content-two
+    > .home__secondary-two-header-wrapper
+    > .home__secondary-two-header {
+    word-spacing: 30vw;
+    line-height: 20vw;
+    font-family: "Wicked";
+    font-size: 12vw;
+    font-weight: 400;
+    color: white;
+    -webkit-text-stroke: 1px #000;
+  }
+
+  .home__secondary-two-right-wrapper {
+    height: 30vw;
+  }
+
+  .home__secondary-two-right-wrapper > .home__secondary-two-desc {
+    font-size: 4vw;
+    width: 40vw;
+    -webkit-text-stroke: 1px black;
+    color: white;
+  }
+
+  .home__secondary-content-two
+    > .home__secondary-two-right-wrapper
+    > a
+    > .home__secondary-two-btn {
+    padding: 2vw 3.25vw;
+    border-radius: 1vw;
+    font-size: 5vw;
+    background-color: #8dc633;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home__jumbo-header-text-1,
+  .home__jumbo-header-text-2 {
+    line-height: 7vw;
+    font-size: 6.5vw;
+  }
+
+  .home__jumbo-header-text-3 {
+    line-height: 17vw;
+    font-size: 16vw;
+  }
+
+  .home__jumbo-right-column-text {
+    width: 90vw;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home__jumbo-header-text-1,
+  .home__jumbo-header-text-2 {
+    line-height: 11vw;
+    font-size: 10vw;
+  }
+
+  .home__jumbo-header-text-3 {
+    line-height: 20vw;
+    font-size: 20vw;
+  }
+
+  .home__jumbo-right-column-text {
+    font-size: 4vw;
+  }
+}

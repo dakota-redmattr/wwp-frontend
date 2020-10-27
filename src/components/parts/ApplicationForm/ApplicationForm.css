@@ -1,0 +1,24 @@
+.app-form__main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-form__job-desc-truncate-btn {
+  color: blue;
+  font-size: 1.05em;
+}
+
+.app-form__job-desc-truncate-btn:hover {
+  color: darkgreen;
+  text-decoration: underline;
+}
+
+.app-form__info-divider {
+  align-self: center;
+  width: 97.5%;
+}
+
+.app-form__form-container {
+  width: 97%;
+  align-self: center;
+}

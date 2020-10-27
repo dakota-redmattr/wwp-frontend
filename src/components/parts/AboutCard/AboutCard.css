@@ -1,0 +1,172 @@
+.ab-card__main-segment {
+  width: 97%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  justify-items: center;
+}
+
+.ab-card__left-col {
+  /* width: 100%;
+  height: 97%; */
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.ab-card__image-placeholder {
+  height: 100%;
+}
+
+.ab-card__left-col-text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 1.5% 3%;
+}
+
+.ab-card__location-name {
+  font-size: 1.75vw;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+}
+
+.ui.header.ab-card__location-address {
+  margin-top: 0;
+  margin-bottom: 0.8vw;
+  font-size: 0.9vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.ui.header.ab-card__location-phone {
+  margin-top: 0;
+}
+
+.ui.header.ab-card__location-phone span {
+  font-size: 0.8vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.ab-card__left-col-btn-group-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ab-card__left-col-btn-group {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.ui.button.ab-card__left-col-btn {
+  min-width: 8vw;
+  font-size: 1vw;
+}
+
+.ui.button.ab-card__left-col-btn > span {
+  font-family: "Poppins", sans-serif;
+}
+
+.ui.button.ab-card__left-col-btn-menu {
+  background-color: #8dc633;
+  color: black;
+}
+
+.ab-card__image {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.ab-card__right-col {
+  width: 100%;
+  height: 15vw;
+  display: flex;
+  align-items: center;
+}
+
+.ab-card__hour-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+  .ab-card__main-segment {
+    justify-content: center;
+    align-items: flex-start;
+    justify-items: center;
+  }
+
+  .ab-card__right-col {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+  }
+
+  .ab-card__location-name {
+    font-size: 3vw;
+  }
+
+  .ui.disabled.ab-card__location-address {
+    font-size: 1.5vw;
+  }
+
+  .ui.grey.header.ab-card__location-phone > span {
+    font-size: 1.2vw;
+  }
+
+  .ui.button.ab-card__left-col-btn {
+    min-width: 10vw;
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ui.raised.segment.ab-card__main-segment {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ab-card__left-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ab-card__right-col {
+    display: none;
+  }
+
+  .ab-card__location-name {
+    font-size: 12vw;
+  }
+
+  .ui.disabled.ab-card__location-address {
+    font-size: 4vw;
+  }
+
+  .ui.grey.header.ab-card__location-phone > span {
+    font-size: 3.85vw;
+  }
+
+  .ab-card__left-col-btn-group-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ab-card__left-col-btn-group {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .ui.button.ab-card__left-col-btn {
+    padding: 3.75vw 0;
+    width: 40vw;
+    font-size: 3.5vw;
+  }
+}

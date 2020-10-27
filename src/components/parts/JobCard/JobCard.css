@@ -1,0 +1,25 @@
+.ui.items > .item.jobcard__wrapper {
+  margin-bottom: 45px;
+  padding: 1.5vw 2vw;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 0.5vw;
+  -webkit-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 860px) {
+  .ui.items > .item.jobcard__wrapper {
+    padding: 5vw 3vw 4vw 3vw;
+  }
+
+  .ui.items > .item > .content > .header.jobcard__position-title {
+    font-size: 6vw;
+  }
+
+  .ui.items > .item > .content > .meta.jobcard__position-address {
+    font-size: 20px;
+    margin-bottom: 3.5vw;
+  }
+}

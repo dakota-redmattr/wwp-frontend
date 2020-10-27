@@ -1,0 +1,19 @@
+.contact__main-form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ui.segment.raised.contact__main-form-seg {
+  width: 95vw;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  padding: 40px 25px;
+}
+
+.contact__message-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}

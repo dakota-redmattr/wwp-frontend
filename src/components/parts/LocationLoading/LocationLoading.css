@@ -1,0 +1,130 @@
+.lc-load__main-content-wrapper {
+  width: 100%;
+  padding: 0;
+  width: 100%;
+  height: 15vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.lc-load__main-segment {
+  padding: 0;
+  width: 100%;
+  height: 15vw;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.lc-load__main-left-col {
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.lc-load__left-col-text {
+  display: grid;
+  grid-template-rows: 66% auto;
+}
+
+.lc-load__image-placeholder {
+  height: 100%;
+}
+
+.lc-load__header {
+  margin: 1vw 1vw;
+}
+
+.lc-load__buttons {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.lc-load__main-right-col {
+  display: grid;
+}
+
+.lc-load__main-segment-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .lc-load__main-content-wrapper {
+    height: 20vw;
+  }
+
+  .lc-load__main-segment {
+    height: 20vw;
+  }
+
+  .lc-load__main-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+  }
+
+  .lc-load__main-segment-mobile {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lc-load__main-segment {
+    display: none;
+  }
+
+  .lc-load__main-segment-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lc-load__main-content-wrapper {
+    margin-bottom: 1em;
+  }
+
+  .line.medium.lc-load__mobile-name-placeholder {
+    font-size: 17vw;
+  }
+
+  .ui.placeholder > .header > .line.long.lc-load__mobile-address-placeholder {
+    height: 10px;
+    font-size: 7vw;
+  }
+
+  .ui.placeholder > .header > .line.long.lc-load__mobile-phone-placeholder {
+    height: 10px;
+    font-size: 6vw;
+  }
+
+  .ui.placeholder > .header > .line.lc-load__mobile-hours-placeholder {
+    margin-top: 0;
+    height: 15px;
+    font-size: 16vw;
+  }
+
+  .ui.placeholder .header .line.lc-load__mobile-hours-placeholder::after {
+    width: unset;
+  }
+
+  .ui.grid
+    > .two.column.row
+    > .column.lc-load__mobile-button-placeholder-column {
+    margin-top: 15px;
+  }
+
+  .ui.grid
+    > .two.column.row
+    > .column.lc-load__mobile-button-placeholder-column
+    > .ui.placeholder
+    > .line.lc-load__mobile-button-placeholder {
+    height: 10px;
+    font-size: 20vw;
+  }
+}
