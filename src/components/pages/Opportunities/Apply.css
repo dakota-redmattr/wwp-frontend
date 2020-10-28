@@ -25,6 +25,10 @@
   width: 92%;
 }
 
+.apply__mobile-divider-container {
+  display: none;
+}
+
 @media screen and (max-width: 860px) {
   .apply__content-wrapper {
     display: flex;
