@@ -229,6 +229,27 @@
   color: black;
 }
 
+@media screen and (min-width: 1900px) {
+  .home__jumbo-header-text-1,
+  .home__jumbo-header-text-2 {
+    font-size: 4.5vw;
+  }
+
+  .home__jumbo-header-text {
+    line-height: 4vw;
+  }
+
+  .home__jumbo-header-text-3 {
+    line-height: 12vw;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .nav-menu > .nav-item {
+    height: 80px;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .home__jumbo-seg {
     height: 650px;

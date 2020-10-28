@@ -33,9 +33,9 @@
 }
 
 .mcc__wrapper > .mcc__cat-title {
-  width: 17vw;
+  width: 14vw;
   height: 17vw;
-  min-width: 17vw;
+  max-width: 14vw;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
