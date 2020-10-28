@@ -20,7 +20,7 @@ function MenuDetail() {
     const fetchFoodItems = async () => {
       try {
         const response = await axios.get(
-          `http://ec2-34-239-125-91.compute-1.amazonaws.com/api/food/${params.slug}`
+          `https://laborcat.com/api/food/${params.slug}`
         );
 
         setCategory(response.data[0].name);
