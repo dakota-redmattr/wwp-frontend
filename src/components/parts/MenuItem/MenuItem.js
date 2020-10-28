@@ -26,7 +26,7 @@ class MenuItem extends React.Component {
           resultString: initialStr.slice(0, this.props.truncateBy),
         })
       : (this.state = {
-          resultString: "Fuck You",
+          resultString: initialStr,
         });
 
     return this.state.resultString;
