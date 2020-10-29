@@ -35,6 +35,7 @@ function MenuDetail() {
     };
     if (mounted) {
       fetchFoodItems();
+      let mounted = false;
     }
     return () => {
       mounted = false;
