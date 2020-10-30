@@ -17,8 +17,8 @@
       format("woff2"),
     url("https://d1v2exdleuhyqq.cloudfront.net/font/wickedscript.woff")
       format("woff"),
-    url("http://localhost:8000/media/font/wickedscript.woff2") format("woff2"),
-    url("http://localhost:8000/media/font/wickedscript.woff") format("woff");
+    /* url("http://localhost:8000/media/font/wickedscript.woff2") format("woff2"),
+    url("http://localhost:8000/media/font/wickedscript.woff") format("woff"); */
   font-weight: normal;
   font-style: normal;
 }
