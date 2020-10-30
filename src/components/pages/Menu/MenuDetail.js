@@ -40,7 +40,7 @@ function MenuDetail() {
     return () => {
       mounted = false;
     };
-  });
+  }, [params.slug]);
 
   const handleDismiss = () => {
     setMessageVisible("hidden");
