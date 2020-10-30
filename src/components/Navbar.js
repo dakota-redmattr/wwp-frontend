@@ -16,7 +16,7 @@ function Navbar() {
         <div className="navbar-container container">
           <Link to="/" onClick={closeMobileMenu} className="navbar-logo">
             <Image
-              src="https://wickedwingpub.s3.amazonaws.com/wwpLogo.png"
+              src="https://d1v2exdleuhyqq.cloudfront.net/wwpLogo.png"
               className="navbar-logo-img"
               width="190px"
             ></Image>

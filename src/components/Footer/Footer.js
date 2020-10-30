@@ -26,7 +26,7 @@ function Footer() {
       </div>
       <Link to="/" className="footer__logo-wrapper">
         <Image
-          src="https://wickedwingpub.s3.amazonaws.com/wwpLogo.png"
+          src="https://d1v2exdleuhyqq.cloudfront.net/wwpLogo.png"
           className="footer__logo-image"
         />
       </Link>

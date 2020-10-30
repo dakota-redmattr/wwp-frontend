@@ -5,6 +5,7 @@
 
 .ui.items > .item > .content > .header.mi__menu-item-header {
   font-size: 28px;
+  line-height: 30px;
 }
 
 .ui.items > .item > .content > .description.mi__menu-item-description {

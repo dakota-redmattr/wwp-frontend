@@ -168,9 +168,9 @@ class ContactForm extends React.Component {
             onChange={this.handleChange}
             focus
             required
-            label="About You"
+            label="Message"
             rows={10}
-            placeholder="Why would you be a good addition to our Wicked Family?"
+            placeholder="How can we help you?"
           />
           <Button
             primary
