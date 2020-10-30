@@ -4,8 +4,7 @@
 @font-face {
   font-family: "Wicked";
   src: url("https://d1v2exdleuhyqq.cloudfront.net/font/wicked.woff2")
-      format("woff2"),
-    url("https://d1v2exdleuhyqq.cloudfront.net/font/wicked.woff") format("woff");
+    format("woff2");
   /* url("http://localhost:8000/media/font/wicked.woff2") format("woff2"),
     url("http://localhost:8000/media/font/wicked.woff") format("woff"); */
   font-weight: normal;
