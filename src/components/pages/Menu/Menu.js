@@ -22,7 +22,7 @@ function Menu() {
   const createCategoryCards = () => {
     return (
       <div className="menu__category-grid-wrapper">
-        {categoryInfo.map((category) => {
+        {categoryInfo.sort((a,b)=>a.order_index - b.order_index).map((category) => {
           if (!category) {
             return (
               <div className="menu__category-grid-wrapper">
