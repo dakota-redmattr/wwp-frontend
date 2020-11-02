@@ -20,7 +20,7 @@ function Footer() {
           About Us
         </Link>
 
-        <Link to="/opportunites" className="footer__page-link">
+        <Link to="/opportunities" className="footer__page-link">
           Opportunities
         </Link>
       </div>
