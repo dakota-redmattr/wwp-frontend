@@ -14,6 +14,7 @@ class ContactForm extends React.Component {
     messageVisible: false,
     messageType: null,
     message: "",
+    termCheck: false,
     loading: true,
     redirect: '',
   }
@@ -41,7 +42,8 @@ class ContactForm extends React.Component {
 
   submitForm = (e) => {
     e.preventDefault();
-    emailjs
+    if (this.state.termCheck) {
+      emailjs
       .sendForm(
         "redmattr-smtp",
         "template_m07l8yw",
@@ -84,20 +86,28 @@ class ContactForm extends React.Component {
           console.log(error);
         }
       );
-
-    this.setState({
-      fName: "",
-      lName: "",
-      emailAddress: "",
-      phoneNumber: "",
-      contentTextArea: "",
-      redirect: "/opportunities"
-    });
+        this.setState({
+          fName: "",
+          lName: "",
+          emailAddress: "",
+          phoneNumber: "",
+          contentTextArea: "",
+          redirect: "/opportunities"
+        });
+    } else {
+      this.setState({
+        message: "All Fields Marked With A Red Star Are Required.",
+        messageVisible: true,
+        messageType: "error",
+      })
+    }
+    
+    
 
   };
 
   render() {
-    const {contentTextArea, fName, lName, emailAddress, phoneNumber, messageVisible, message, messageType, loading} = this.state
+    const {contentTextArea, fName, lName, emailAddress, phoneNumber, messageVisible, message, termCheck, messageType, loading} = this.state
 
     return (
       <div>
@@ -144,6 +154,7 @@ class ContactForm extends React.Component {
             <Form.Field required>
               <label>First Name</label>
               <Input
+                required
                 name="fName"
                 value={fName}
                 placeholder="First Name"
@@ -155,6 +166,7 @@ class ContactForm extends React.Component {
             <Form.Field required>
               <label>Last Name</label>
               <Input
+                required
                 name="lName"
                 value={lName}
                 placeholder="Last Name"
@@ -197,6 +209,17 @@ class ContactForm extends React.Component {
             rows={10}
             placeholder="How can we help you?"
           />
+          <Form.Field required>
+            <Form.Checkbox
+              required
+              inline
+              name="termCheck"
+              style={{ marginLeft: "15px" }}
+              checked={termCheck}
+              onChange={() => this.setState({ termCheck: !termCheck })}
+              label={{ children: "I agree to the Terms and Conditions" }}
+            />
+          </Form.Field>
           <Button
             primary
             size="big"

@@ -67,6 +67,14 @@
   scale: 1.05;
 }
 
+.footer__policy-wrapper {
+  margin-top: 20px;
+}
+
+.footer__privacy-policy {
+  color: gray;
+}
+
 @media screen and (max-width: 767px) {
   .footer__page-link-grid {
     grid-template-columns: repeat(2, 1fr);

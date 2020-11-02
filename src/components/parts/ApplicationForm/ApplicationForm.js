@@ -10,6 +10,7 @@ import {
   Checkbox,
   Loader,
   Dimmer,
+  Message,
 } from "semantic-ui-react";
 import { isValidPhoneNumber } from "react-phone-number-input";
 import emailjs from "emailjs-com";
@@ -28,10 +29,20 @@ class ApplicationForm extends React.Component {
     emailAddress: "",
     phoneNumber: undefined,
     applicationTextArea: "",
+    messageVisible: false,
+    message: "",
+    messageType: "",
     termCheck: false,
     loading: true,
     redirect: "",
   };
+
+  handleDismissMessage = () => {
+    this.setState({ 
+      messageVisible: false,
+      message: ""
+    })
+  }
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value });
 
@@ -62,7 +73,8 @@ class ApplicationForm extends React.Component {
 
   submitForm = (e) => {
     e.preventDefault();
-    emailjs
+    if (this.state.termCheck) {
+      emailjs
       .sendForm(
         "redmattr-smtp",
         "template_qpfqvv8",
@@ -104,6 +116,14 @@ class ApplicationForm extends React.Component {
       termCheck: false,
       redirect: '/opportunities',
     });
+    } else {
+      this.setState({
+        message: "All Fields Marked With A Red Star Are Required.",
+        messageVisible: true,
+        messageType: "error",
+      })
+    }
+    
 
 
   };
@@ -133,12 +153,37 @@ class ApplicationForm extends React.Component {
       emailAddress,
       phoneNumber,
       applicationTextArea,
+      messageVisible,
+      message,
+      messageType,
       termCheck,
     } = this.state;
 
     return (
       <div className="app-form__main-content-wrapper">
         {this.state.redirect !== '' ? <Redirect to={this.state.redirect} /> : null}
+        {messageVisible && message
+        ? (
+          <div className="contact__message-container">
+          <Message 
+            floating
+            className={messageType}
+            compact
+            onDismiss={this.handleDismissMessage}
+            header={message}
+            style={{
+              minWidth: "75%",
+              maxWidth: "75%",
+              position: "fixed",
+              marginTop: "-40px",
+              textAlign: "center",
+              zIndex: 50
+            }}
+          />
+          </div>
+        ) : (
+          null
+        )}
         <h1 style={{ minHeight: "36px" }} className="apply__job-title-header">
           {this.props.jobTitle}
         </h1>

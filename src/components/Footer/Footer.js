@@ -41,6 +41,9 @@ function Footer() {
           <FaFacebook />
         </a>
       </div>
+      <div className="footer__policy-wrapper">
+        <a href="https://wickedwingpub.s3.amazonaws.com/WWP-Privacy-Policy.pdf" target="__blank" className="footer__privacy-policy">Privacy Policy</a>
+      </div>
     </div>
   );
 }
