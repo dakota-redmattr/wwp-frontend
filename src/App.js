@@ -13,11 +13,13 @@ import Apply from "./components/pages/Opportunities/Apply";
 import Contact from "./components/pages/Opportunities/Contact";
 import WingMenu from "./components/parts/WingMenu/WingMenu";
 import DrinkMenu from "./components/pages/Menu/DrinkMenu/DrinkMenu";
+import ScrollToTop from "./components/parts/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop>
         <Navbar />
         <Switch>
           <Route path="/about" component={About} />
@@ -31,6 +33,7 @@ function App() {
           <Route path="/" exact component={Home} />
         </Switch>
         <Footer />
+        </ScrollToTop>
       </Router>
     </div>
   );
