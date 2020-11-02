@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
-import "./MenuDetail.css";
-import category from "./category";
+import "../MenuDetail.css";
+import "./DrinkMenu.css";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 import { Message, ItemGroup, Segment, Icon } from "semantic-ui-react";
-import MenuItem from "../../parts/MenuItem/MenuItem";
-import WingMenu from "../../parts/WingMenu/WingMenu";
+import DrinkItem from "../../../parts/DrinkItem/DrinkItem.js";
 
-function MenuDetail() {
+function DrinkMenu() {
   let params = useParams();
   const [loading, setLoading] = useState(true);
-  const [foodItems, setFoodItems] = useState([]);
+  const [drinkItems, setDrinkItems] = useState([]);
   const [category, setCategory] = useState("");
   const [isError, setIsError] = useState(false);
   const [messageVisible, setMessageVisible] = useState("visible");
@@ -18,14 +17,14 @@ function MenuDetail() {
 
   useEffect(() => {
     let mounted = true;
-    const fetchFoodItems = async () => {
+    const fetchDrinkItems = async () => {
       try {
         const response = await axios.get(
-          `https://laborcat.com/api/food/${params.slug}`
+          `https://laborcat.com/api/food/drinks`
         );
 
-        setCategory(response.data[0].name);
-        setFoodItems(response.data[0].items);
+        setCategory("Drinks");
+        setDrinkItems(response.data);
         setLoading(false);
       } catch (error) {
         console.log(error);
@@ -35,7 +34,7 @@ function MenuDetail() {
       }
     };
     if (mounted) {
-      fetchFoodItems();
+      fetchDrinkItems();
       mounted = false;
     }
     return () => {
@@ -103,13 +102,14 @@ function MenuDetail() {
           {loading ? (
             <h1>Loading...</h1>
           ) : (
-            <ItemGroup className="md__menu-item-group" divided>
-              {foodItems.sort((a, b) => a.order_index - b.order_index).map((item) => (
-                <MenuItem
-                  key={item.id}
-                  truncateBy={100}
-                  menuItemName={item.name}
-                  menuItemDescription={item.description}
+            <ItemGroup className="md__menu-item-group d-menu__item-group" divided>
+              {drinkItems.sort((a, b) => a.order_index - b.order_index).map((item) => (
+                <DrinkItem
+                  cat_name={item.name}
+                  desc={item.description}
+                  listed={item.listed}
+                  order_index={item.order_index}
+                  items={item.items}
                 />
               ))}
             </ItemGroup>
@@ -120,4 +120,4 @@ function MenuDetail() {
   );
 }
 
-export default MenuDetail;
+export default DrinkMenu;

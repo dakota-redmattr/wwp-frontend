@@ -1,0 +1,288 @@
+.wing-m__content-wrapper {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.wing-m__top-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 35px;
+}
+
+.wing-m__wing-cat-title,
+.wing-m__wing-cat-desc {
+  margin: 0;
+}
+
+.wing-m__wing-cat-title {
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+}
+
+.wing-m__wing-cat-desc {
+  margin-left: 10px;
+  font-weight: 200;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+}
+
+.wing-m__boneless-size-desc,
+.wing-m__trad-size-desc,
+.wing-m__boneless-size-title,
+.wing-m__trad-size-title {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.wing-m__boneless-size-item {
+  margin: 10px 20px 15px 20px;
+}
+
+.wing-m__boneless-size-desc {
+  padding-left: 4px;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+}
+
+.wing-m__top-right-wing-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 15px 0 15px;
+}
+
+.wing-m__trad-size-item {
+  margin: 10px 20px 0 20px;
+}
+
+.wing-m__trad-size-desc {
+  margin-left: 4px;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+}
+
+.wing-m__bottom-content-wrapper {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.wing-m__sauce-header {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.wing-m__bottom-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.wing-m__sauce-cat-title {
+  font-size: 36px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.wing-m__sauce-item {
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+.wing-m__sauce-title {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 1500px) {
+  .wing-m__wing-cat-title {
+    font-size: 40px;
+  }
+
+  .wing-m__wing-cat-desc {
+    font-size: 18px;
+  }
+
+  .wing-m__boneless-size-title {
+    font-size: 32px;
+  }
+
+  .wing-m__boneless-size-desc {
+    font-size: 16px;
+  }
+
+  .wing-m__trad-size-desc {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wing-m__wing-cat-title {
+    font-size: 30px;
+  }
+
+  .wing-m__wing-cat-desc {
+    font-size: 16px;
+  }
+
+  .wing-m__boneless-size-title {
+    font-size: 26px;
+  }
+
+  .wing-m__boneless-size-desc {
+    font-size: 14px;
+  }
+
+  .wing-m__trad-size-title {
+    font-size: 22px;
+  }
+
+  .wing-m__trad-size-desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .wing-m__bottom-grid-wrapper {
+    grid-template-columns: 1fr;
+    justify-items: flex-start;
+  }
+
+  .wing-m__sauce-header {
+    font-size: 5vw;
+  }
+
+  .wing-m__sauce-cat-title {
+    font-size: 4.5vw;
+    text-align: start;
+  }
+
+  .wing-m__sauce-cat-items {
+    margin-bottom: 60px;
+  }
+
+  .wing-m__sauce-item {
+    margin-left: 4vw;
+  }
+
+  .wing-m__sauce-title {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .wing-m__top-grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .wing-m__wing-cat-header {
+    margin-bottom: 15px;
+  }
+
+  .wing-m__wing-cat-title {
+    font-size: 6vw;
+  }
+
+  .wing-m__wing-cat-desc {
+    font-size: 3vw;
+  }
+
+  .wing-m__boneless-size-title {
+    font-size: 4vw;
+  }
+
+  .wing-m__boneless-size-desc {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+
+  .wing-m__boneless-size-desc {
+    font-size: 2.85vw;
+  }
+
+  .wing-m__top-left-wing-content-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .wing-m__trad-size-title {
+    font-size: 3.5vw;
+  }
+
+  .wing-m__trad-size-desc {
+    font-size: 2.25vw;
+  }
+
+  .wing-m__sauce-header {
+    font-size: 7vw;
+  }
+
+  .wing-m__sauce-cat-title {
+    font-size: 5.5vw;
+  }
+
+  .wing-m__sauce-title {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .wing-m__boneless-size-item {
+    margin-bottom: 5px;
+  }
+
+  .wing-m__wing-cat-title {
+    font-size: 6.25vw;
+  }
+
+  .wing-m__wing-cat-desc {
+    font-size: 3.75vw;
+  }
+
+  .wing-m__boneless-size-title {
+    font-size: 4.5vw;
+  }
+
+  .wing-m__boneless-size-desc {
+    font-size: 3.5vw;
+  }
+
+  .wing-m__top-left-wing-content-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .wing-m__sauce-header {
+    font-size: 9vw;
+  }
+
+  .wing-m__trad-size-title {
+    font-size: 4.25vw;
+  }
+
+  .wing-m__trad-size-desc {
+    font-size: 3vw;
+  }
+
+  .wing-m__sauce-cat-title {
+    font-size: 8vw;
+  }
+
+  .wing-m__sauce-item {
+    margin-left: 5vw;
+  }
+
+  .wing-m__sauce-title {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .wing-m__content-wrapper {
+    padding-left: 5px;
+    margin-bottom: -60px;
+  }
+}

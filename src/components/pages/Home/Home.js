@@ -24,9 +24,7 @@ function Home() {
 
           <div className="home__jumbo-right-column-wrapper">
             <h1 className="home__jumbo-right-column-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dignissim dui eget felis maximus luctus. Donec gravida urna
-              vehicula diam tincidunt rhoncus sed ut dolor.
+              Welcome to Your New Wicked Addiction. Bring Your Friends, Bring Your Family, <span style={{marginRight: '2px'}}>(</span>But Most Importantly<span style={{marginLeft: '2px'}}>)</span> Bring Your Appetite. Click The Button Below To Get A Sneak Peak.
             </h1>
             <Link to="/menu">
             <Button size="huge" className="home__jumbo-right-column-btn">
@@ -43,6 +41,7 @@ function Home() {
       <div className="home__secondary-content-container">
         <div className="home__secondary-wrapper-one home__secondary-wrapper">
           <div className="home__secondary-content-one home__secondary-content-wrapper">
+            
             <div className="home__secondary-one-header-wrapper">
               <h1 className="home__secondary-one-header home__secondary-header">
                 JOIN OUR WICKED FAMILY
@@ -50,9 +49,7 @@ function Home() {
               <hr className="home__secondary-one-header-underline" />
             </div>
             <h2 className="home__secondary-one-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dignissim dui eget felis maximus luctus. Donec gravida urna
-              vehicula diam tincidunt rhoncus sed ut dolor.
+              We're Hiring at Wicked Wing Pub! Click Below To Apply. What Are You, Chicken?
             </h2>
             <Link to="/opportunities">
             <Button size="massive" className="home__secondary-one-btn">
@@ -73,7 +70,7 @@ function Home() {
             </div>
             <div className="home__secondary-two-right-wrapper">
               <h2 className="home__secondary-two-desc">
-                Lorem ipsum dolor sit amet lorem.
+                Find A Location Near You
               </h2>
               <Link to="/about">
               <Button size="massive" className="home__secondary-two-btn">

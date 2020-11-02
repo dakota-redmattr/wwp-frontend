@@ -52,7 +52,7 @@ function Menu() {
       <div className="menu__title-jumbo">
         <h1 className="menu__title-jumbo-text">Our Menu</h1>
         <h2 className="menu__title-jumbo-desc">
-          Lorem ipsum dolar sit amet, consectetur adipiscing elit.
+          This Is Where The Magic Happens
         </h2>
       </div>
       {createCategoryCards()}

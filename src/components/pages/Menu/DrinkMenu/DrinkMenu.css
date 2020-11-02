@@ -1,0 +1,9 @@
+.ui.divided.items.md__menu-item-group.d-menu__item-group {
+  padding: 15px 30px;
+}
+
+@media screen and (max-width: 860px) {
+  .ui.divided.items.md__menu-item-group.d-menu__item-group {
+    padding: 0;
+  }
+}

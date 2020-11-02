@@ -67,8 +67,7 @@ function Opportunities() {
         <div className="opp__position-listing-side-column">
           <div className="opp__business-opportunities">
             <h2 className="opp__business-opportunities-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              voluptatem?
+              Got Something Bigger In Mind? Shoot Us A Message!
             </h2>
             <Link to="/opportunities/contact">
             <Button size="large" className="opp__business-opp-btn">

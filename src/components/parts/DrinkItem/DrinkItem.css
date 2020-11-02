@@ -1,0 +1,89 @@
+.dm-item__main-content-wrapper {
+  margin-bottom: 40px;
+}
+
+.dm-item__item-title-header {
+  margin-bottom: 5px;
+  font-size: 2.5vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.dm-item__item-desc {
+  margin-top: 0;
+  margin-left: 1vw;
+  font-size: 1.2vw;
+  font-weight: 200;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+}
+
+.dm-item__ul-item {
+  margin-left: 2vw;
+  font-size: 1.2vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.dm-item__item-li-name {
+  font-size: 1.4vw;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1450px) {
+  .dm-item__item-title-header {
+    font-size: 4vw;
+    text-decoration: underline;
+  }
+
+  .dm-item__item-desc {
+    font-size: 2vw;
+  }
+
+  .dm-item__ul-item {
+    margin-left: 2.5vw;
+    color: gray;
+  }
+
+  .dm-item__item-li-name {
+    font-size: 3.5vw;
+    font-weight: 200;
+    color: gray;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .dm-item__item-title-header {
+    font-size: 7vw;
+  }
+
+  .dm-item__item-desc {
+    font-size: 3.5vw;
+  }
+
+  .dm-item__ul-item {
+    margin-left: 3.5vw;
+    font-size: 4.75vw;
+  }
+
+  .dm-item__item-li-name {
+    font-size: 4.75vw;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .dm-item__item-title-header {
+    font-size: 8vw;
+  }
+
+  .dm-item__item-desc {
+    font-size: 4.5vw;
+  }
+
+  .dm-item__ul-item {
+    margin-left: 7vw;
+    font-size: 5.75vw;
+  }
+
+  .dm-item__item-li-name {
+    font-size: 5.75vw;
+  }
+}

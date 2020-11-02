@@ -11,6 +11,8 @@ import Footer from "./components/Footer/Footer";
 import MenuDetail from "./components/pages/Menu/MenuDetail";
 import Apply from "./components/pages/Opportunities/Apply";
 import Contact from "./components/pages/Opportunities/Contact";
+import WingMenu from "./components/parts/WingMenu/WingMenu";
+import DrinkMenu from "./components/pages/Menu/DrinkMenu/DrinkMenu";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/about" component={About} />
+          <Route exact path="/menu/wings" component={WingMenu} />
+          <Route exact path="/menu/drinks" component={DrinkMenu} />
           <Route path="/menu/:slug" component={MenuDetail} />
           <Route path="/menu" component={Menu} />
           <Route path="/opportunities/contact" component={Contact} />
