@@ -28,10 +28,11 @@
 }
 
 .menu__title-jumbo-desc {
+  width: 80%;
   padding-left: 2.75vw;
   margin-top: -0.75vw;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
   -webkit-text-stroke: 1px black;
   text-shadow: -2px 2px black;
@@ -175,5 +176,11 @@
     width: 40vw;
     height: 40vw;
     background-color: red;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu__title-jumbo-desc {
+    font-size: 2rem;
   }
 }

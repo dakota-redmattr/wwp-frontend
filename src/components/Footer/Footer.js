@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { Header, Image } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 function Footer() {
@@ -37,15 +37,9 @@ function Footer() {
       </div>
       <hr className="footer__social-icon-divider" />
       <div className="footer__social-icon-wrapper">
-        <Link to="/" className="footer__facebook-icon-link footer__social-link">
+        <a href="https://www.facebook.com/wickedwingpub" target="__blank" className="footer__facebook-icon-link footer__social-link">
           <FaFacebook />
-        </Link>
-        <Link
-          to="/"
-          className="footer__instagram-icon-link footer__social-link"
-        >
-          <FaInstagram />
-        </Link>
+        </a>
       </div>
     </div>
   );

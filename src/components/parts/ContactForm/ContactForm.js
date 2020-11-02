@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Button, Checkbox, Form, Icon, Input, Message, Segment, TextArea } from "semantic-ui-react";
 import emailjs from "emailjs-com";
 import "./ContactForm.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, Redirect, useLocation } from "react-router-dom";
 
 class ContactForm extends React.Component {
   state = {
@@ -14,7 +14,8 @@ class ContactForm extends React.Component {
     messageVisible: false,
     messageType: null,
     message: "",
-    loading: true
+    loading: true,
+    redirect: '',
   }
 
   handleChange = (e, {name, value}) => this.setState({ [name]: value });
@@ -62,12 +63,35 @@ class ContactForm extends React.Component {
         }
       );
 
+      emailjs
+      .sendForm(
+        "redmattr-smtp",
+        "template_9yaazho",
+        e.target,
+        "user_7DrAEa8YsTB7ON8bn35kq"
+      )
+      .then(
+        (result) => {
+          if (result.status === 200) {
+            this.setState({
+              message: "Your request has been successfully submitted.",
+              messageVisible: true,
+              messageType: "positive",
+            })
+          }
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+
     this.setState({
       fName: "",
       lName: "",
       emailAddress: "",
       phoneNumber: "",
       contentTextArea: "",
+      redirect: "/opportunities"
     });
 
   };
@@ -77,6 +101,7 @@ class ContactForm extends React.Component {
 
     return (
       <div>
+      {this.state.redirect !== '' ? <Redirect to={this.state.redirect}/> : null}
       {messageVisible && message
         ? (
           <div className="contact__message-container">

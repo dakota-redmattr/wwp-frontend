@@ -49,8 +49,9 @@ class Apply extends React.Component {
 
           <div className="apply__seg-wrapper apply__side-seg-wrapper">
             <Segment raised compact className="apply__side-seg apply__seg">
+              <h1 className="apply__apply-page-sidebar-blurb">Pssst...</h1>
               <h1 className="apply__apply-page-sidebar-header">
-                Lorem, ipsum dolor.
+                We're Constantly In Search Of New Talent. Would You Or Someone You Know Be The Perfect Fit? Then We Can't Wait To Meet You!
               </h1>
             </Segment>
           </div>

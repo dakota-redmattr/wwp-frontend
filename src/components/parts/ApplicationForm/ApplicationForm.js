@@ -13,6 +13,7 @@ import {
 } from "semantic-ui-react";
 import { isValidPhoneNumber } from "react-phone-number-input";
 import emailjs from "emailjs-com";
+import { Redirect } from "react-router-dom";
 
 class ApplicationForm extends React.Component {
   state = {
@@ -29,6 +30,7 @@ class ApplicationForm extends React.Component {
     applicationTextArea: "",
     termCheck: false,
     loading: true,
+    redirect: "",
   };
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value });
@@ -76,6 +78,22 @@ class ApplicationForm extends React.Component {
         }
       );
 
+      emailjs
+      .sendForm(
+        "redmattr-smtp",
+        "template_3joq4bg",
+        e.target,
+        "user_7DrAEa8YsTB7ON8bn35kq"
+      )
+      .then(
+        (result) => {
+          console.log(result)
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+
     this.setState({
       listingId: "",
       fName: "",
@@ -84,7 +102,10 @@ class ApplicationForm extends React.Component {
       phoneNumber: "",
       applicationTextArea: "",
       termCheck: false,
+      redirect: '/opportunities',
     });
+
+
   };
 
   componentDidUpdate(prevState) {
@@ -117,6 +138,7 @@ class ApplicationForm extends React.Component {
 
     return (
       <div className="app-form__main-content-wrapper">
+        {this.state.redirect !== '' ? <Redirect to={this.state.redirect} /> : null}
         <h1 style={{ minHeight: "36px" }} className="apply__job-title-header">
           {this.props.jobTitle}
         </h1>
@@ -152,6 +174,7 @@ class ApplicationForm extends React.Component {
           <Form.Field>
             <Input type="hidden" name="listingId" value={listingId} />
           </Form.Field>
+          
 
           <Form.Field>
             <Input type="hidden" name="jobTitle" value={jobTitle} />

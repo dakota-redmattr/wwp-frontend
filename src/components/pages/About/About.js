@@ -32,10 +32,7 @@ function About() {
               Our Locations
             </Header>
             <Header as="p" className="about__left-sidebar-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur commodi facere delectus? Eum libero magnam, incidunt
-              architecto labore odio expedita repellat doloremque a aliquam
-              facere nam nemo, consectetur numquam optio.
+              You've Made It This Far. Come See What We're All About In Person. You Have Nothing To Lose But Your Hunger.
             </Header>
           </Segment>
         </div>

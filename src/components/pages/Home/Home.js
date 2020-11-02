@@ -24,7 +24,7 @@ function Home() {
 
           <div className="home__jumbo-right-column-wrapper">
             <h1 className="home__jumbo-right-column-text">
-              Welcome to Your New Wicked Addiction. Bring Your Friends, Bring Your Family, <span style={{marginRight: '2px'}}>(</span>But Most Importantly<span style={{marginLeft: '2px'}}>)</span> Bring Your Appetite. Click The Button Below To Get A Sneak Peak.
+              Welcome to Your New Wicked Addiction. Bring Your Friends, Bring Your Family, <span style={{marginRight: '2px'}}>(</span>But Most Importantly<span style={{marginLeft: '2px'}}>)</span> Bring Your Appetite. Click The Button Below To Get A Sneak Peek.
             </h1>
             <Link to="/menu">
             <Button size="huge" className="home__jumbo-right-column-btn">
