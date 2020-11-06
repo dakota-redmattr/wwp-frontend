@@ -20,7 +20,7 @@ function DrinkMenu() {
     const fetchDrinkItems = async () => {
       try {
         const response = await axios.get(
-          `https://laborcat.com/api/food/drinks`
+          `https://api.wickedwingpub.com/api/food/drinks`
         );
 
         setCategory("Drinks");

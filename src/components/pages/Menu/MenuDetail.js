@@ -21,14 +21,13 @@ function MenuDetail() {
     const fetchFoodItems = async () => {
       try {
         const response = await axios.get(
-          `https://laborcat.com/api/food/${params.slug}`
+          `https://api.wickedwingpub.com/api/food/${params.slug}`
         );
 
         setCategory(response.data[0].name);
         setFoodItems(response.data[0].items);
         setLoading(false);
       } catch (error) {
-        console.log(error);
         setIsError(true);
         setErrorMessage(`${error}`);
         setLoading(false);

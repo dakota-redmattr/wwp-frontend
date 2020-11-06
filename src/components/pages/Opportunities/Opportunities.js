@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 
 function Opportunities() {
   const [loading, setLoading] = useState(true);
+  const [showJobs, setShowJobs] = useState(false);
   const [jobListings, setJobListings] = useState([]);
 
   const fetchJobs = async () => {
@@ -26,7 +27,6 @@ function Opportunities() {
   };
 
   const createListingCards = () => {
-    console.log("Help");
     return (
       <ItemGroup>
         {jobListings.map((listing) => {
@@ -58,7 +58,7 @@ function Opportunities() {
       </div>
       <div className="opp__content-grid-wrapper">
         <div className="opp__position-listing-column">
-          {createListingCards()}
+          {showJobs ? createListingCards() : <h3 style={{textAlign: 'center'}}>There are no job listings available at this moment. Please check again later.</h3>}
         </div>
         <div className="opp__mobile-column-divider">
           <hr className="opp__mobile-column-divider" />
