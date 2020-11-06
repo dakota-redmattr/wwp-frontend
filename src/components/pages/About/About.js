@@ -13,7 +13,6 @@ function About() {
   const fetchLocationData = async () => {
     const response = await locationInfo.get("/locations/");
     setLocationData(response.data);
-    console.log(response.data[0].name);
     setLoading(false);
   };
 
@@ -37,7 +36,6 @@ function About() {
           </Segment>
         </div>
         <AboutCard locationData={locationData} />
-        {console.log(locationData)}
       </div>
     </div>
   );
