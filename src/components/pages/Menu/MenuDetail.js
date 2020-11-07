@@ -106,7 +106,7 @@ function MenuDetail() {
               {foodItems.sort((a, b) => a.order_index - b.order_index).map((item) => (
                 <MenuItem
                   key={item.id}
-                  truncateBy={100}
+                  truncateBy={125}
                   menuItemName={item.name}
                   menuItemDescription={item.description}
                 />
